@@ -1,0 +1,588 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS | quiza_responsive</title>
+    <link rel="icon" href="Images/Logomark.png" type="image/x-icon"> <!--ty google-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/output.css" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'),
+            list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-80px'),
+            list.classList.remove('opacity-100'))
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="px-16 bg-white py-6 md:flex md:items-center drop-shadow-sm">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl cursor-pointer pr-10">
+                    <img class=" p-1 h-10 inline" src="Images/Logomark.png" alt="logo">
+                    HRMS
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <div>
+                <ul class="bg-white md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li class=" mx-4 my-6 md:my-0">
+                        <a class="text-gray-500 hover:text-black duration-500" href="">
+                            Home
+                        </a></li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-gray-500 hover:text-black duration-500" href="">
+                            Products
+                            <ion-icon class="pl-1" name="chevron-down-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-gray-500 hover:text-black duration-500" href="">
+                            Resources
+                            <ion-icon class="pl-1" name="chevron-down-outline"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a class="text-gray-500 hover:text-black duration-500" href="">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto md:flex sm:hidden">
+                <img src="Images/Dropdown.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pt-20">
+            <div class="m-auto flex w-fit bg-green-100 text-green-700 rounded-3xl px-1 py-1 text-xs font-semibold">
+                <h6 class="bg-white rounded-3xl px-2">
+                    New feature
+                </h6>
+                <p class="pl-2">
+                    Check out the team dashboard
+                </p>
+                <img class="pl-1" src="Images/arrow-right (1).png" alt="">
+            </div>
+            <div class="text-center py-4 md:px-20">
+                <h1 class="text-6xl font-bold">
+                    Beautiful analytics to grow smarter
+                </h1>
+                <p class="py-7 text-gray-600 px-10 text-xl lg:px-80">
+                    Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+                </p>
+            </div>
+            <div class="grid md:flex md:justify-center md:space-x-2 mx-4 gap-4">
+                <button class="inline-flex rounded-lg bg-white border justify-center py-4 px-7" type="button" id="btdemo">
+                    <img class="min-w-fit" src="Images/play-circle.png" alt=""> Demo
+                </button>
+                <button class="flex rounded-lg bg-green-600 border text-white justify-center py-4 px-7" type="button" id="btsignup">
+                    Sign up
+                </button>
+            </div>
+            <div class="justify-center visible lg:flex md:flex sm:hidden mt-16">
+                <img src="Images/Macbook Pro 16 mockup.png" alt="">
+            </div>
+            <div class="justify-center visible sm:flex lg:hidden md:hidden mt-16">
+                <img src="Images/Content.png" alt="">
+            </div>
+        </section>
+        <section class="py-20 grid justify-items-center space-y-7">
+            <p class="text-center text-gray-500 text-lg">
+                Join 4,000+ companies already growing
+            </p>
+            <div class="grid grid-cols-2 lg:flex md:grid-cols-3 justify-items-center border-b py-10 lg:space-x-20 sm:gap-10">
+                <img src="Images/Company logo(1).png" alt="layers">
+                <img class="w-44" src="Images/Company logo.png" alt="sisyphus">
+                <img src="Images/Company logo (2).png" alt="circooles">
+                <img src="Images/Company logo (3).png" alt="catalog">
+                <img src="Images/Company logo (4).png" alt="quotient">
+                <img class="visible lg:hidden w-56" src="Images/Logo wrap.png" alt="hourglass">
+            </div>
+        </section>
+        <section class="text-center grid sm:mx-10 py-10">
+            <div class="md:mx-10 space-y-4">
+                <h6 class="text-green-600 font-semibold">
+                    Features
+                </h6>
+                <h1 class="text-4xl font-semibold">
+                    Analytics that feels like it’s from the future
+                </h1>
+                <p class="text-gray-500 text-xl lg:px-80">
+                    Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+                </p>
+            </div>
+            <div class="grid justify-items-center lg:grid-cols-3 py-20 sm:grid-cols-1 sm:px-4 sm:gap-20 text-xl">
+                <div class="lg:content-center space-y-2">
+                    <div class="flex justify-center">
+                        <img class="" src="Images/Featured icon.png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Share team inboxes
+                    </h4>
+                    <p class="text-gray-600">
+                        Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-center">
+                        <img src="Images/Featured icon (1).png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Deliver instant answers
+                    </h4>
+                    <p class="text-gray-600">
+                        An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-center">
+                        <img src="Images/Featured icon (2).png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Manage your team with reports
+                    </h4>
+                    <p class="text-gray-600">
+                        Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-center">
+                        <img src="Images/Featured icon (3).png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Connect with customers
+                    </h4>
+                    <p class="text-gray-600">
+                        Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-center">
+                        <img src="Images/Featured icon (4).png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Connect the tools you already use
+                    </h4>
+                    <p class="text-gray-600">
+                        Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-center">
+                        <img src="Images/Featured icon (5).png" alt="">
+                    </div>
+                    <h4 class="font-semibold">
+                        Our people make the difference
+                    </h4>
+                    <p class="text-gray-600">
+                        We’re an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-100 text-center py-20 space-y-8">
+            <div class="flex justify-center">
+                <img class="" src="Images/Company logo.png" alt="companylogo">
+            </div>
+            <p class="font-semibold text-5xl lg:px-44 md:px-10">
+                We’ve been using Untitled to kick start every new project and can’t imagine working without it.
+            </p>
+            <div class="grid space-y-1">
+                <div class="flex justify-center">
+                    <img src="Images/Avatar.png" alt="">
+                </div>
+                <p class="font-semibold">
+                    Candice Wu
+                </p>
+                <p class="text-gray-500">
+                    Product Manager, Sisyphus
+                </p>
+            </div>
+        </section>
+        <section class="grid text-center px-4 py-20 space-y-4 border-b mx-10">
+            <div class="space-y-10">
+                <h6 class="bg-green-50 text-green-700 rounded-3xl px-4 w-fit m-auto font-semibold">
+                    Features
+                </h6>
+                <h1 class="text-5xl font-semibold">
+                    Cutting-edge features for advanced analytics
+                </h1>
+                <p class="lg:px-96 text-gray-500 text-xl">
+                    Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.
+                </p>
+            </div>
+            <div class="justify-items-center">
+                <div class="flex justify-center">
+                    <div class="visible sm:hidden lg:flex md:flex">
+                        <img src="Images/Content (1).png" alt="">
+                    </div>
+                    <div class="visible lg:hidden md:hidden" >
+                        <img src="Images/Content (2).png" alt="">
+                    </div>
+                </div>
+                <div class="grid justify-items-center text-center md:grid-cols-3 sm:grid-cols-1 lg:px-10 sm:gap-20 sm:py-10">
+                    <div class="space-y-2">
+                        <div class="flex justify-center">
+                            <img class="" src="Images/Featured icon.png" alt="">
+                        </div>
+                        <h4 class="font-semibold text-2xl">
+                            Share team inboxes
+                        </h4>
+                        <p class="text-gray-600 text-xl">
+                            Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.
+                        </p>
+                        <div class="flex justify-center text-xl font-semibold">
+                            <button class="flex text-green-800 text-lg" type="button">
+                                Learn more<img class="pt-1 pl-1" src="Images/arrow-right.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-center">
+                            <img src="Images/Featured icon (1).png" alt="">
+                        </div>
+                        <h4 class="font-semibold text-2xl">
+                            Deliver instant answers
+                        </h4>
+                        <p class="text-gray-600 text-xl">
+                            An all-in-one customer service platform that helps you balance everything your customers need to be happy.
+                        </p>
+                        <div class="flex justify-center text-xl font-semibold">
+                            <button class="flex text-green-800 text-lg" type="button">
+                                Learn more<img class="pt-1 pl-1" src="Images/arrow-right.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-center">
+                            <img src="Images/Featured icon (2).png" alt="">
+                        </div>
+                        <h4 class="font-semibold text-2xl">
+                            Manage your team with reports
+                        </h4>
+                        <p class="text-gray-600 text-xl">
+                            Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+                        </p>
+                        <div class="flex justify-center text-xl font-semibold">
+                            <button class="flex text-green-800 text-lg" type="button">
+                                Learn more<img class="pt-1 pl-1" src="Images/arrow-right.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid py-20">
+            <div class="grid text-center space-y-4 sm:mx-4">
+                <h1 class="font-semibold text-4xl">
+                    Frequently asked questions
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about the product and billing.
+                </p>
+            </div>
+            <div class="text-lg py-10 lg:mx-80 md:mx-40 sm:mx-10">
+                <div class="border-b-2 py-10">
+                    <div class="flex space-y-2">
+                        <h4 class="font-semibold">
+                            Is there a free trial available?
+                        </h4>
+                        <button class="ml-auto" type="button">
+                            <img src="Images/Icon wrap(minus).png" alt="">
+                        </button>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 lg:pr-28 sm:pr-5">
+                            Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex border-b-2 py-10">
+                    <div>
+                        <h4 class="font-semibold">
+                            Can I change my plan later?
+                        </h4>
+                    </div>
+                    <button  class="ml-auto" type="button">
+                        <img class="" src="Images/Icon wrap(plus).png" alt="">
+                    </button>
+                </div>
+                <div class="flex border-b-2 py-10">
+                    <div>
+                        <h4 class="font-semibold">
+                            What is your cancellation policy?
+                        </h4>
+                    </div>
+                    <button  class="ml-auto" type="button">
+                        <img src="Images/Icon wrap(plus).png" alt="">
+                    </button>
+                </div>
+                <div class="flex border-b-2 py-10">
+                    <div>
+                        <h4 class="font-semibold">
+                            Can other info be added to an invoice?
+                        </h4>
+                    </div>
+                    <button class="ml-auto" type="button">
+                        <img src="Images/Icon wrap(plus).png" alt=""> 
+                    </button>
+                </div>
+                <div class="flex border-b-2 py-10">
+                    <div>
+                        <h4 class="font-semibold">
+                            How does billing work?
+                        </h4>
+                    </div>
+                    <button  class="ml-auto" type="button">
+                        <img src="Images/Icon wrap(plus).png" alt="">
+                    </button>
+                </div>
+                <div class="flex py-10">
+                    <div>
+                        <h4 class="font-semibold">
+                            How do I change my account email?
+                        </h4>
+                    </div>
+                    <button class="ml-auto" type="button">
+                        <img src="Images/Icon wrap(plus).png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="grid lg:mx-28 sm:mx-10 bg-gray-100 py-10 space-y-5 justify-items-center text-center">
+                <div>
+                    <img src="Images/Avatar group.png" alt="">
+                </div>
+                <div>
+                    <h4 class="font-semibold text-xl">
+                        Still have questions?
+                    </h4>
+                    <p class="text-gray-600 text-lg">
+                        Can’t find the answer you’re looking for? Please chat to our friendly team.
+                    </p>
+                </div>
+                <div>
+                    <button class="flex rounded-lg bg-green-600 border text-white justify-center py-4 px-7" type="button" id="btsignup">
+                        Get in touch
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 lg:mx-28 sm:mx-10 border-t-2">
+            <div class="grid space-y-4 ">
+                <h6 class="text-green-700 text-lg font-semibold">
+                    Launch faster
+                </h6>
+                <h2 class="font-semibold text-3xl">
+                    Build something great
+                </h2>
+                <p class="text-gray-600 text-xl lg:mr-96">
+                    We’ve done all the heavy lifting so you don’t have to — get all the data you need to launch and grow your business faster.
+                </p>
+            </div>
+            <div class="lg:flex grid py-10 sm:mx-10 justify-center">
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 text-center content-center lg:pr-20 gap-20 sm:py-10">
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-6xl text-green-600">
+                            4,000+
+                        </h1>
+                        <h4 class="font-bold text-xl">
+                            Global customers
+                        </h4>
+                        <p class="text-lg text-gray-600">
+                            We’ve helped over 4,000 amazing global companies.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-6xl text-green-600">
+                            600%
+                        </h1>
+                        <h4 class="font-bold text-xl">
+                            Return on investment
+                        </h4>
+                        <p class="text-lg text-gray-600">
+                            Our customers have reported an average of ~600% ROI.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-6xl text-green-600">
+                            10k
+                        </h1>
+                        <h4 class="font-bold text-xl">
+                            Global downloads
+                        </h4>
+                        <p class="text-lg text-gray-600">
+                            Our app has been downloaded over 10k times.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="font-semibold text-6xl text-green-600">
+                            200+
+                        </h1>
+                        <h4 class="font-bold text-xl">
+                            5-star reviews
+                        </h4>
+                        <p class="text-lg text-gray-600">
+                            We’re proud of our 5-star rating with over 200 reviews.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img class="lg:flex md:flex sm:hidden" src="Images/Image.png" alt="">
+                    <img class="visible lg:hidden md:hidden" src="Images/Image(1).png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-100 py-20">
+            <div class="text-center py-4 md:px-20">
+                <h1 class="text-4xl font-semibold">
+                    Start your free trial
+                </h1>
+                <p class="py-7 text-gray-600 px-10 text-xl">
+                    Join over 4,000+ startups already growing with Untitled.
+                </p>
+            </div>
+            <div class="grid md:flex md:justify-center md:space-x-2 mx-4 gap-4">
+                <button class="inline-flex rounded-lg bg-white border justify-center py-4 px-7" type="button" id="btdemo">
+                    Learn more
+                </button>
+                <button class="flex rounded-lg bg-green-600 border text-white justify-center py-4 px-7" type="button" id="btsignup">
+                    Get started
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="font-semibold px-20 justify-around grid lg:grid-cols-6 sm:grid-cols-2 md:grid-cols-3 sm:gap-4 py-20">
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                        Product
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li>
+                            <a href="#">Solutions</a>
+                            <span class="bg-green-50 text-xs text-green-600 rounded-3xl py-1 px-2 ml-2">New</span>
+                        </li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Releases</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                        Company
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Media kit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                        Resources
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                       Use cases 
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">Start ups</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Government</a></li>
+                        <li><a href="#">SaaS</a></li>
+                        <li><a href="#">Marketplaces</a></li>
+                        <li><a href="#">Ecommerce</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                        Social
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Github</a></li>
+                        <li><a href="#">AngelList</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h6 class="text-gray-400">
+                        Legal
+                    </h6>
+                </div>
+                <div class="text-gray-500 text-lg">
+                    <ul>
+                        <li><a href="#">Tearms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mx-20 border-t lg:flex md:flex sm:flex-none py-10">
+            <div class="flex">
+                <span class="text-2xl cursor-pointer pr-10 font-bold">
+                    <img class=" p-1 h-10 inline" src="Images/Logomark.png" alt="logo">
+                    HRMS
+                </span>
+            </div>
+            <div class="ml-auto text-gray-500">
+                <p>
+                    &copy;2077 Untitled UI. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
